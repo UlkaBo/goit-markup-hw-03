@@ -1,0 +1,193 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-color: #000000;
+  --alternative-color: #ffffff;
+  --adress-footer-color: rgb (255, 255, 255, 0.6);
+  --primary-bg-color: #ffffff;
+  --accent-bg-color: #f5f4fa;
+  --alternative-bg-color: #2f303a;
+}
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.accent {
+  color: var(--accent-color);
+}
+/* отключаю стили списков*/
+.list {
+  list-style: none;
+}
+
+/* ----header---- */
+.link {
+  text-decoration: none;
+}
+.site-nav .link,
+.address .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.address .link {
+  color: var(--primary-text-color);
+}
+
+.link:hover,
+.link:focus,
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* ----end header---- */
+
+/*------hero----------*/
+.hero {
+  background-color: var(--alternative-bg-color);
+}
+
+.hero-h1 {
+  color: var(--alternative-color);
+
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--alternative-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/*------end hero------*/
+
+/*------section-------*/
+.section {
+  background-color: var(--primary-bg-color);
+}
+.section-h2 {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/*------end section---*/
+
+/*---features-list----*/
+
+.features-list {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/*--end features-list-*/
+
+/*--------teams-------*/
+
+.teams-list {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/*------end teams-----*/
+
+.footer {
+  background-color: var(--alternative-bg-color);
+}
+
+.footer .logo {
+  color: var(--alternative-color);
+}
+
+.footer .address {
+  color: var(--adress-footer-color);
+  font-style: normal;
+  font-weight: 400;
+}
+.street {
+  color: var(--alternative-color);
+}
+
+/*------styles for portfolio-------------*/
+
+.list-title {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.list-description {
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.our-works-button {
+  background-color: var(--accent-bg-color);
+  color: var(--title-text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+}
+.our-works-button:hover,
+.our-works-button:focus {
+  background-color: var(--accent-color);
+  color: var(--alternative-color);
+}
+/*------end styles for portfolio-------------*/
+/* цвет текста #757575
+    цвет заголовков #212121
+    синий цвет выделенных заголовков
+        лого, кнопок #2196F3
+    цвет лого #000000
+    цвет белого текста и белого фона #FFFFFF
+    цвет серого фона для кнопок и сектора #F5F4FA
+    цвет фона футтера #2F303A
+    цвет адреса в футере #FFFFFF 60%
+    */ ;
