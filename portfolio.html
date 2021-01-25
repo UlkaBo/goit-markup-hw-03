@@ -6,26 +6,29 @@
     <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="./index.html"><span class='accent'>Web</span>Studio</a>
-            <ul class="site-nav list">
-                <li><a class="link" href="./index.html">Студия</a></li>
-                <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="address list">
-            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-    </header>
+        <header>
+            <div class="horizontal-flex container">
+                <nav class="horizontal-flex">
+                    <a class="logo" href="./index.html"><span class='accent'>Web</span>Studio</a>
+                    <ul class="horizontal-flex site-nav list">
+                        <li><a class="link current" href="./index.html">Студия</a></li>
+                        <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="link last-child" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="horizontal-flex address list">
+                    <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a class="link last-child" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+            </div>
+        </header>
 
     <main>
-        <section>
+        <section class = 'container'>
             <h1>Наши работы</h1>
             <ul class="list">
                 <li><button type="button" , class="our-works-button">Все</button></li>
@@ -34,7 +37,8 @@
                 <li><button type="button" , class="our-works-button">Дизайн</button></li>
                 <li><button type="button" , class="our-works-button">Маркетинг</button></li>
             </ul>
-            <ul class="list">
+
+            <ul class="list grid-flex">
                 <li>
                     <img src="./images/portfolio/img.jpg" width="370" height="294"
                         alt="заглавная страница сайта с тремя фотографиями">
@@ -86,12 +90,24 @@
         </section>
     </main>
     <footer class='footer'>
-        <a class='logo' href="./index.html"><span class='accent'>Web</span>Studio</a>
-        <address class='address list'>
-            <li class='street'>г. Киев, пр-т Леси Украинки, 26</li>
-            <li>info@example.com</li>
-            <li>+38 099 111 11 11</li>
-        </address>
+        <div class="container">
+            <a class='logo' href="./index.html"><span class='accent'>Web</span>Studio</a>
+            <address class='address'>
+                <ul class='list'>
+                    <li class='footer-list'>
+                        <a class='street link' href='https://goo.gl/maps/ssaZGnjNMrTu6JDE8'>г. Киев, пр-т Леси Украинки,
+                            26</a>
+                    </li>
+                    <li class='footer-list'>
+                        <a class=" link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class=''>
+                        <a class="link last-child" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+    
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>

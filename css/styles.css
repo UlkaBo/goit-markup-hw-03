@@ -8,6 +8,7 @@
   --primary-bg-color: #ffffff;
   --accent-bg-color: #f5f4fa;
   --alternative-bg-color: #2f303a;
+  --color-shadow: rgba(0, 0, 0, 0.15);
 }
 body {
   background-color: var(--primary-bg-color);
@@ -17,25 +18,51 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.horizontal-flex {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  display: block;
   color: var(--logo-color);
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-right: 93px;
 }
 .accent {
   color: var(--accent-color);
 }
 /* отключаю стили списков*/
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 /* ----header---- */
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .link {
   text-decoration: none;
+  margin-right: 50px;
+}
+.horizontal-flex.address {
+  margin-left: auto;
 }
 .site-nav .link,
 .address .link {
@@ -60,6 +87,14 @@ body {
 /*------hero----------*/
 .hero {
   background-color: var(--alternative-bg-color);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+  width: 1600px;
 }
 
 .hero-h1 {
@@ -69,15 +104,18 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .button {
   background-color: var(--accent-color);
   color: var(--alternative-color);
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--color-shadow);
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -86,13 +124,21 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-bottom: 200px;*/
 }
 
 /*------end hero------*/
 
 /*------section-------*/
+img {
+  display: block;
+}
 .section {
   background-color: var(--primary-bg-color);
+  padding-top: 94px;
+  /*--padding-bottom: 94px;--*/
 }
 .section-h2 {
   color: var(--title-text-color);
@@ -101,6 +147,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /*------end section---*/
@@ -114,12 +163,29 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-
+.features li {
+  width: 270px;
+  margin-right: 30px;
+}
+.features li:last-child {
+  margin-right: 0;
+}
+.features > p {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
 /*--end features-list-*/
 
 /*--------teams-------*/
-
+.actions .list li:not(:last-child) {
+  margin-right: 30px;
+}
+.teams .list li:not(:last-child) {
+  margin-right: 30px;
+}
 .teams-list {
   color: var(--title-text-color);
 
@@ -127,16 +193,35 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
+.card-label {
+  width: 270px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.card-label p {
+  margin: 0;
+}
 /*------end teams-----*/
 
+/*------footer--------*/
 .footer {
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--alternative-bg-color);
+  width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 94px;
 }
 
 .footer .logo {
   color: var(--alternative-color);
+  margin-bottom: 20px;
 }
 
 .footer .address {
@@ -147,20 +232,12 @@ body {
 .street {
   color: var(--alternative-color);
 }
+.footer-list {
+  margin-bottom: 9px;
+}
+/*------ end footer--------*/
 
 /*------styles for portfolio-------------*/
-
-.list-title {
-  color: var(--title-text-color);
-
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.list-description {
-  font-size: 16px;
-  line-height: 1.875;
-}
 
 .our-works-button {
   background-color: var(--accent-bg-color);
@@ -179,6 +256,30 @@ body {
 .our-works-button:focus {
   background-color: var(--accent-color);
   color: var(--alternative-color);
+}
+.grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-title {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.list-description {
+  font-size: 16px;
+  line-height: 1.875;
+}
+.grid-flex li {
+  margin-right: 30px;
+}
+.grid-flex li:nth-child(3n) {
+  margin-right: 0;
+}
+.last-child {
+  margin-right: 0;
 }
 /*------end styles for portfolio-------------*/
 /* цвет текста #757575
