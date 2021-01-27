@@ -27,6 +27,13 @@ body {
   padding-right: 15px;
   width: 1200px;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .horizontal-flex {
   display: flex;
@@ -110,7 +117,7 @@ header {
   margin-top: 0px;
   margin-bottom: 30px;
 }
-.button {
+.button-hero {
   background-color: var(--accent-color);
   color: var(--alternative-color);
   border: none;
@@ -238,13 +245,20 @@ img {
 /*------ end footer--------*/
 
 /*------styles for portfolio-------------*/
-
+.filters-our-works {
+  margin-bottom: 34px;
+  justify-content: center;
+}
 .our-works-button {
+  display: inline-block;
   background-color: var(--accent-bg-color);
   color: var(--title-text-color);
   border: none;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -252,6 +266,10 @@ img {
 
   text-align: center;
 }
+.our-works-button {
+  margin-right: 8px;
+}
+
 .our-works-button:hover,
 .our-works-button:focus {
   background-color: var(--accent-color);
@@ -261,23 +279,40 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+.card-box-descriprion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .list-title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .list-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
   font-size: 16px;
   line-height: 1.875;
 }
 .grid-flex li {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .grid-flex li:nth-child(3n) {
   margin-right: 0;
 }
+.grid-flex li:nth-last-child(3-n) {
+  margin-bottom: 0;
+}
+
 .last-child {
   margin-right: 0;
 }
