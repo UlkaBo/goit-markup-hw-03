@@ -101,8 +101,10 @@ header {
 }
 
 .hero-h1 {
+  margin-left: auto;
+  margin-right: auto;
   color: var(--alternative-color);
-
+  width: 700px;
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
