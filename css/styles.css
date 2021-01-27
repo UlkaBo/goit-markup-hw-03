@@ -10,6 +10,7 @@
   --alternative-bg-color: #2f303a;
   --color-shadow: rgba(0, 0, 0, 0.15);
   --color-border-header: #ececec;
+  --color-border-cards: #eeeeee;
 }
 body {
   background-color: var(--primary-bg-color);
@@ -70,19 +71,15 @@ header {
   text-decoration: none;
   margin-right: 50px;
 }
-.horizontal-flex.address {
+.horizontal-flex.header-address {
   margin-left: auto;
 }
 .site-nav .link,
-.address .link {
-  color: var(--title-text-color);
-
+.header-address .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.address .link {
   color: var(--primary-text-color);
 }
 
@@ -101,9 +98,6 @@ header {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
-  width: 1600px;
 }
 
 .hero-h1 {
@@ -192,6 +186,10 @@ img {
 .actions .list li:not(:last-child) {
   margin-right: 30px;
 }
+.teams,
+.actions {
+  margin-bottom: 94px;
+}
 .teams .list li:not(:last-child) {
   margin-right: 30px;
 }
@@ -222,10 +220,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--alternative-bg-color);
-  width: 1600px;
+
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-top: 94px;
 }
 
 .footer .logo {
@@ -233,13 +230,15 @@ img {
   margin-bottom: 20px;
 }
 
-.footer .address {
+.footer-list.not-address {
   color: var(--adress-footer-color);
   font-style: normal;
   font-weight: 400;
 }
-.street {
+
+.street.link {
   color: var(--alternative-color);
+  font-style: normal;
 }
 .footer-list {
   margin-bottom: 9px;
@@ -247,6 +246,10 @@ img {
 /*------ end footer--------*/
 
 /*------styles for portfolio-------------*/
+.our-works {
+  margin-bottom: 94px;
+}
+
 .filters-our-works {
   margin-bottom: 34px;
   justify-content: center;
@@ -284,10 +287,13 @@ img {
   flex-wrap: wrap;
 }
 .card-box-description {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid var(--color-border-cards);
+  border-left: 1px solid var(--color-border-cards);
+  border-bottom: 1px solid var(--color-border-cards);
 }
 
 .list-title {
