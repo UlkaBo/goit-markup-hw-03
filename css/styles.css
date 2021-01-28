@@ -82,9 +82,7 @@ header {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-link:visited {
-  color: none;
-}
+
 .link:hover,
 .link:focus,
 .site-nav .link.current {
