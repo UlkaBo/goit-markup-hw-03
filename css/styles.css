@@ -237,6 +237,9 @@ img {
   font-style: normal;
   font-weight: 400;
 }
+.no-color {
+  color: var(--adress-footer-color);
+}
 .link:visited {
   color: var(--adress-footer-color);
 }
