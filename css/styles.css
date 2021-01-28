@@ -82,7 +82,9 @@ header {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
+link:visited {
+  color: none;
+}
 .link:hover,
 .link:focus,
 .site-nav .link.current {
@@ -190,7 +192,7 @@ img {
 }
 .teams,
 .actions {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .teams .list li:not(:last-child) {
   margin-right: 30px;
@@ -237,7 +239,9 @@ img {
   font-style: normal;
   font-weight: 400;
 }
-
+.link:visited {
+  color: var(--adress-footer-color);
+}
 .street.link {
   color: var(--alternative-color);
   font-style: normal;
